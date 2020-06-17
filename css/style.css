@@ -38,7 +38,8 @@ body {
   margin: 20px auto;
   background-color: #1e8fb3;
   border-radius: 10px;
-  padding: 20px;
+  padding: 40px 20px;
+  box-shadow: 2px 2px 2px 3px #ccc;
 }
 #biglietto td {
   text-align: center;
