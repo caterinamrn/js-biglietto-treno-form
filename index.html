@@ -7,18 +7,24 @@
   </head>
   <body>
     <!-- form da compilare -->
-    <div>
-      <label for="nome">Nome</label>
-      <input id="nome" type="text" name="nome" value="" >
-      <label for="km">Kilometri da percorrere</label>
-      <input id="km" type="text" name="km" value="">
+    <div id="form">
+
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" name="nome" value="" >
+        <br>
+        <label for="km">Kilometri da percorrere</label>
+        <input id="km" type="text" name="km" value="">
+        <br>
+      <label for="categoria" >Categoria</label>
       <select id="categoria" name="categoria">
         <option value="Over65">Over 65</option>
         <option value="Maggiorenne" selected>Maggiorenne</option>
         <option value="Minorenne">Minorenne</option>
       </select>
+      <br>
       <button id="creabiglietto" type="button" name="button">Crea</button>
       <button id="annullabiglietto" type="button" name="button">Annulla</button>
+
     </div>
     <!-- tabella con dati biglietto -->
     <table id="biglietto" class="hidden">

@@ -3,8 +3,47 @@
  padding: 0;
  box-sizing: border-box;
 }
-
+body {
+  background-color: #ededed;
+}
+/* form */
+#form {
+  border: 1px solid #ccc;
+  width: 90%;
+  margin: 10px auto;
+  padding: 20px;
+}
+#form br {
+  margin-bottom: 20px;
+}
+#creabiglietto {
+  background-color: #1e8fb3;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+}
+#annullabiglietto {
+  color: #1e8fb3;
+  font-weight: bold;
+  padding: 5px;
+  border: 1px #1e8fb3 solid;
+  border-radius: 5px;
+  float: right;
+  background-color: white;
+}
 /* biglietto */
+#biglietto {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #1e8fb3;
+  border-radius: 10px;
+  padding: 20px;
+}
+#biglietto td {
+  text-align: center;
+}
+/*transizione biglietto */
 .hidden {
   opacity: 0;
 }
