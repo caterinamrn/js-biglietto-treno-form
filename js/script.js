@@ -1,5 +1,8 @@
 
-var creaBtn= document.getElementById('creabiglietto');
+var creaBtn = document.getElementById('creabiglietto');
+var annullaBtn = document.getElementById('annullabiglietto');
+  var biglietto = document.getElementById('biglietto');
+
 creaBtn.addEventListener("click", function () {
 
   var prezzoBiglietto;
@@ -31,6 +34,17 @@ creaBtn.addEventListener("click", function () {
   document.getElementById('passeggero').innerHTML = nome;
   document.getElementById('ntreno').innerHTML = treno;
   document.getElementById('ncarrozza').innerHTML = carrozza;
-  document.getElementById('prezzo').innerHTML = prezzoBiglietto;
+  document.getElementById('prezzo').innerHTML = prezzoBiglietto.toFixed(2);
   document.getElementById('fascia_eta').innerHTML = categoria;
+
+  biglietto.className = "show";
+});
+
+annullaBtn.addEventListener("click", function () {
+
+  document.getElementById('nome').value = "";
+  document.getElementById('km').value = "";
+  document.getElementById('categoria').value = "Maggiorenne";
+
+  biglietto.className = "hidden";
 });
