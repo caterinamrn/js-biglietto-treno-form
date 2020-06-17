@@ -1,15 +1,17 @@
-// var nome;
-// var km;
-// var prezzoKilometro= 0.21;
-// var opzione;
 
 var creaBtn= document.getElementById('creabiglietto');
 creaBtn.addEventListener("click", function () {
+
   var prezzoBiglietto;
   var nome = document.getElementById('nome').value;
   var km = document.getElementById('km').value;
   var prezzoKilometro= 0.21;
   var categoria = document.getElementById('categoria').value;
+  var minCarrozza = 1 ;
+  var maxCarrozza = 13;
+  var minTreno = 90000;
+  var maxTreno = 100000;
+
 
   if (categoria == "Minorenne") {
     prezzoBiglietto = prezzoKilometro * km - (20/100 * prezzoKilometro * km);
@@ -20,4 +22,15 @@ creaBtn.addEventListener("click", function () {
     prezzoBiglietto = prezzoKilometro * km;
   }
   console.log(nome, km, categoria, prezzoBiglietto);
-})
+
+  var treno = Math.floor( Math.random()* (maxTreno- minTreno + 1) )+ minTreno;
+  console.log( treno );
+  var carrozza = Math.floor( Math.random()* (maxCarrozza- minCarrozza + 1) )+ minCarrozza;
+  console.log( carrozza );
+
+  document.getElementById('passeggero').innerHTML = nome;
+  document.getElementById('ntreno').innerHTML = treno;
+  document.getElementById('ncarrozza').innerHTML = carrozza;
+  document.getElementById('prezzo').innerHTML = prezzoBiglietto;
+  document.getElementById('fascia_eta').innerHTML = categoria;
+});

@@ -18,9 +18,29 @@
         <option value="Minorenne">Minorenne</option>
       </select>
       <button id="creabiglietto" type="button" name="button">Crea</button>
-      <!-- <button id="annullabiglietto" type="button" name="button">Annulla</button> -->
+      <button id="annullabiglietto" type="button" name="button">Annulla</button>
     </div>
-
+    <!-- tabella con dati biglietto -->
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Numero Treno</th>
+          <th>Numero Carrozza</th>
+          <th>Prezzo Biglietto</th>
+          <th>Categoria Selezionata dall'Utente</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="passeggero"></td>
+          <td id="ntreno"></td>
+          <td id="ncarrozza"></td>
+          <td id="prezzo"></td>
+          <td id="fascia_eta"></td>
+        </tr>
+      </tbody>
+    </table>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
